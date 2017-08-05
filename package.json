@@ -1,0 +1,7 @@
+{
+  "name": "reader",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Petr Messner",
+  "license": "MIT"
+}
