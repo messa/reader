@@ -3,3 +3,6 @@ run-dev: node_modules
 
 node_modules:
 	yarn install
+
+clean:
+	rm -rf .next node_modules yarn-error.log
