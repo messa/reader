@@ -48,8 +48,8 @@ export default class extends Component {
           <pre>{JSON.stringify(accounts, null, 2)}</pre>
 
           <Button
-            onClick={() => { window.location = '/auth/connect-twitter' }}
-            onClick={() => { Router.push('/connected-accounts') }}
+            secondary
+            onClick={() => { window.location = '/auth/connect-twitter'; }}
             icon='twitter'
             content='Add Twitter account'
           />

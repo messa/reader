@@ -27,6 +27,8 @@ app.prepare()
 .then(() => {
   const server = express()
 
+  server.set('json spaces', 2)
+
   server.use(cookieParser())
   server.use(bodyParser.urlencoded({ extended: true }))
   server.use(bodyParser.json())

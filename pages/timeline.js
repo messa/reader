@@ -53,10 +53,8 @@ export default class extends Component {
 
   render() {
     const { timelineDataError, accounts } = this.state;
-    const anyAccounts = accounts !== null && accounts.length > 0;
-    const noAccountsMsg = anyAccounts ? null : (
-      <p>You have no accounts configured.</p>
-    );
+    const noAccountsMsg = (accounts === null || accounts.length > 0)
+      ? null : (<p>You have no accounts configured.</p>);
     return (
       <div>
         <CustomHead />

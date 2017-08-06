@@ -11,7 +11,11 @@ router.get('/timeline-data', (req, res) => {
     user: {
       displayName: req.user.displayName,
     },
-    accounts: req.user.twitterAccounts.map(acc => ({})),
+    accounts: req.user.twitterAccounts.map(acc => ({
+      twitterId: acc.twitterId,
+      username: acc.username,
+      displayName: acc.displayName,
+    })),
   });
 });
 
@@ -23,8 +27,10 @@ router.get('/user', (req, res) => {
     user: {
       displayName: req.user.displayName,
     },
-    accounts: req.user.twitterAccounts.map(acc => ({})),
+    accounts: req.user.twitterAccounts.map(acc => ({
+      twitterId: acc.twitterId,
+      username: acc.username,
+      displayName: acc.displayName,
+    })),
   });
 });
-
-router.get('/debug/user', (req, res) => (res.json({ user: req.user || '-' })));
