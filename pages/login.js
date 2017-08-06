@@ -8,7 +8,7 @@ export default (props) => {
     <div>
       <CustomHead />
       <Container text>
-        <h1>Reader</h1>
+        <h1>Sign in</h1>
         <Button
           primary
           onClick={() => { window.location = '/auth/google/' }}

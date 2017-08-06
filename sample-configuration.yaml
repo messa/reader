@@ -1,0 +1,5 @@
+google_oauth2:
+    client_id: 292...rkl.apps.googleusercontent.com
+    client_secret: 7i...ng
+    callback_url: https://example.com/auth/google/callback
+session_secret: topsecretstringhere
